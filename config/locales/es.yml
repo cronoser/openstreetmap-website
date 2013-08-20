@@ -22,6 +22,7 @@
 # Author: VegaDark
 # Author: Vivaelcelta
 # Author: Xuacu
+# Author: cronoser
 es: 
   activerecord: 
     attributes: 
@@ -1952,3 +1953,131 @@ es:
       fail: No se pudo revocar la función `%{role}' del usuario `%{name}'. Por favor, comprueba que el usuario y la función sean válidos.
       heading: Confirmar revocación de función
       title: Confirmar revocación de función
+  note:
+    description:
+      opened_at_html: "Creada %{when}"
+      opened_at_by_html: "Creada %{when} por %{user}"
+      commented_at_html: "Actualizado %{when}"
+      commented_at_by_html: "Actualizado %{when} por %{user}"
+      closed_at_html: "Resuelta %{when}"
+      closed_at_by_html: "Resuelta %{when} por %{user}"
+      reopened_at_html: "Reactivada %{when}"
+      reopened_at_by_html: "Reactivada %{when} por %{user}"
+    rss:
+      title: "Notas OpenStreetMap"
+      description_area: "Una lista de las notas, informó, se comentó o se cerró en su área [(%{min_lat}|%{min_lon}) -- (%{max_lat}|%{max_lon})]"
+      description_item: "An rss feed for note %{id}"
+      opened: "nueva nota (cerca %{place})"
+      commented: "nuevo comentario (cerca %{place})"
+      closed: "nota cerrada (cerca %{place})"
+      reopened: "nota reactivada (cerca %{place})"
+    entry:
+      comment: Comentar
+      full: Nota completa
+    mine:
+      title: "Notas añadidads o comentadas %{user}"
+      heading: "Notas de %{user}"
+      subheading: "Notas añadidas o comentadas por %{user}"
+      id: "Id"
+      creator: "Creador"
+      description: "Descripción"
+      created_at: "Creada en"
+      last_changed: "Último cambio"
+      ago_html: "%{when} atrás"
+  javascripts:
+    close: Cerrar
+    share:
+      title: "Compartir"
+      cancel: "Cancelar"
+      image: "Imagen"
+      link: "Enlace or HTML"
+      long_link: "Enlace"
+      short_link: "Enlace abreviado"
+      embed: "HTML"
+      custom_dimensions: "Indica las dimensiones a medida"
+      format: "Formato:"
+      scale: "Escala:"
+      image_size: "Imagen mostrará la capa estándar en "
+      download: "Descargar"
+      short_url: "URL abreviada"
+      include_marker: "Incluir marcador"
+      center_marker: "Centrar mapa en el marcador"
+      paste_html: "Pegar HTML para incrustar en website"
+    key:
+      title: "Leyenda"
+      tooltip: "Leyenda"
+    map:
+      zoom:
+        in: Acercar
+        out: Alejar
+      base:
+        standard: Estándar
+        cycle_map: Mapa Ciclista
+        transport_map: Mapa de Transporte
+        mapquest: MapQuest Open
+      layers:
+        header: Capas del Mapa
+        notes: Notas del Mapa
+        data: Datos del Mapa
+        overlays: Activar superposición para solucionar el mapa
+    site:
+      edit_tooltip: Editar el mapa
+      edit_disabled_tooltip: Acercar para editar el mapa
+      edit_zoom_alert: Debes hacer acercar para editar el mapa
+      history_tooltip: Ver edicciones en este área
+      history_disabled_tooltip: Acercar para ver edicciones en esta área
+      history_zoom_alert: Debes hacer acercar para ver las edicciones de este área
+      createnote_tooltip: Añadir una nota al mapa
+      createnote_disabled_tooltip: Acercar para añadir una nota al mapa
+      createnote_zoom_alert: Debes acercar para añadir una nota al mapa
+    notes:
+      new:
+        intro: "En orden para mejorar el mapa, la información que introduzcas es mostrada a otros mapeadores, por tanto se tan descriptivo y preciso como sea posible cuando añadas el marcador a su posición correcta e introduzcas tu nota debajo."
+        add: Añadir Nota
+      show:
+        permalink: Enlace permanente
+        anonymous_warning: Esta nota incluye comentarios de usuariuos anónimos que deben ser verificados independientemente.
+        opened_by: "creada por <a href='%{user_url}'>%{user}</a> el %{time}"
+        opened_by_anonymous: "creada por anónimo el %{time}"
+        commented_by: "comentada por <a href='%{user_url}'>%{user}</a> el %{time}"
+        commented_by_anonymous: "comentada por anónimo el %{time}"
+        closed_by: "resuelta por <a href='%{user_url}'>%{user}</a> el %{time}"
+        closed_by_anonymous: "resuelta por anónimo el %{time}"
+        reopened_by: "reactivada por <a href='%{user_url}'>%{user}</a> el %{time}"
+        reopened_by_anonymous: "reactivada por anónimo el %{time}"
+        hide: Ocultar
+        resolve: Resolver
+        reactivate: Reactivar
+        comment_and_resolve: Comentar y Resolver
+        comment: Comentar
+  redaction:
+    edit:
+      description: "Descripción"
+      heading: "Editar redacción"
+      submit: "Guardar redacción"
+      title: "Editar redacción"
+    index:
+      empty: "No hay  redacciones para mostrar."
+      heading: "Lista de redacciones"
+      title: "Lista de redacciones"
+    new:
+      description: "Descripción"
+      heading: "Introducir información para nueva redacción"
+      submit: "Crear redacción"
+      title: "Creando nueva redacción"
+    show:
+      description: "Descripción:"
+      heading: "Mostrando redacción \"%{title}\""
+      title: "Mostrando redacción"
+      user: "Creador:"
+      edit: "Editar esta redacción"
+      destroy: "Eliminar esta redacción"
+      confirm: "¿Estas seguro?"
+    create:
+      flash: "Redacción creada."
+    update:
+      flash: "Cambios guardados."
+    destroy:
+      not_empty: "Redacción no está vacía. Por favor borre las redacciones anteriores antes de destruir esta."
+      flash: "Redacción destruida."
+      error: "Hubo un error destruyendo la redacción."
